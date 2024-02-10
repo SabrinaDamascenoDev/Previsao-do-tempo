@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/fundo.jpg);
+}
+
+.container{
+    background-color: #f0f8ff;
+    border-radius: 20px;
+    padding: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    height: 31em;
+    
+   
+}
+
+.pesquisar{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    padding: 4px 12px ;
+}
+
+.pesquisar input{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 100%;
+    
+}
+
+.pesquisar input:focus-visible{
+    outline: none;
+}
+
+.pesquisar button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#clima{
+    margin-top: 20px;
+    display: none;
+
+}
+
+
+
+#clima .titulo{
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #372f3f;
+}
+
+.temp{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background: linear-gradient(90deg, #5a7cdc, #606dde);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+.temp_foto{
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+}
+
+.temperatura{
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+}
+
+.descricao_temp{
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+
+.outras_infor{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    left: 0.4em;
+    position: relative;
+    justify-content: space-between;
+    
+}
+
+
+.umi{
+    position: relative;
+    left: 9.5em;
+    bottom: 5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.info i{
+    position: relative;
+    top: 2em;
+    font-size: 25px;
+}
+
+.info .info_div {
+    position: relative;
+    left: 2.5em;
+    font-size: 13px;
+    top: 0.5em;
+}
+
+.alerta{
+    color: red;
+   
+}
